@@ -8,10 +8,10 @@ const LatestNews = () => {
       <p className="text-base-200 bg-secondary px-3 py-2">Latest</p>
 
       {/* <Marquee className="flex gap-4"> */}
-      <p className="mx-10 font-bold">
+      <p className="mx-5 font-bold">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
-      <p className="mx-10 font-bold">
+      <p className="mx-5 font-bold">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
       {/* </Marquee> */}

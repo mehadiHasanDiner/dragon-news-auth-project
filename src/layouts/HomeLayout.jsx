@@ -1,7 +1,9 @@
 import React from "react";
-import Header from "../../components/Header/Header";
+import Header from "../components/Header";
 import { Outlet } from "react-router";
-import LatestNews from "../../components/LatestNews/LatestNews";
+import LatestNews from "../components/LatestNews";
+import Navbar from "../components/Navbar";
+import LeftAside from "../components/homeLayout/LeftAside";
 
 const HomeLayout = () => {
   return (
@@ -12,8 +14,13 @@ const HomeLayout = () => {
       <section className="w-11/12 mx-auto">
         <LatestNews></LatestNews>
       </section>
+      <nav className="w-11/12 mx-auto">
+        <Navbar></Navbar>
+      </nav>
       <main>
-        <section className="left_nav"></section>
+        <aside>
+          <LeftAside></LeftAside>
+        </aside>
         <section className="main">
           <Outlet></Outlet>
         </section>
