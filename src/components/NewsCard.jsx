@@ -1,9 +1,18 @@
 import { FaEye, FaStar, FaRegBookmark, FaShareAlt } from "react-icons/fa";
 import { format } from "date-fns";
+import { Link } from "react-router";
 
 const NewsCard = ({ news }) => {
-  const { title, thumbnail_url, details, rating, total_view, author, tags } =
-    news;
+  const {
+    id,
+    title,
+    thumbnail_url,
+    details,
+    rating,
+    total_view,
+    author,
+    tags,
+  } = news;
 
   return (
     <div className="card bg-base-100 shadow-sm rounded-lg">
@@ -56,9 +65,12 @@ const NewsCard = ({ news }) => {
           {details.length > 180 ? details.slice(0, 180) + "..." : details}
         </p>
 
-        <button className="text-orange-500 font-semibold text-sm w-fit">
+        <Link
+          to={`/news-details/${id}`}
+          className="text-orange-500 font-semibold text-sm w-fit"
+        >
           Read More
-        </button>
+        </Link>
 
         {/* Footer */}
         <div className="flex items-center justify-between mt-4 pt-4 border-t">

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -17,3 +18,5 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 export default app;
+=======
+>>>>>>> bc39537eb0d785fba827b7b338c787a1b957d86f
