@@ -1,6 +1,7 @@
 import { FaEye, FaStar, FaRegBookmark, FaShareAlt } from "react-icons/fa";
 import { format } from "date-fns";
 import { Link } from "react-router";
+import notFoundImg from "./../assets/Image-not-found.png";
 
 const NewsCard = ({ news }) => {
   const {
@@ -46,8 +47,9 @@ const NewsCard = ({ news }) => {
       {/* Image */}
       <figure className="px-4 pt-4">
         <img
-          src={thumbnail_url}
+          src={thumbnail_url || notFoundImg}
           alt={title}
+          onError={(e) => (e.target.src = notFoundImg)}
           className="rounded-lg w-full h-52 object-cover"
         />
       </figure>
