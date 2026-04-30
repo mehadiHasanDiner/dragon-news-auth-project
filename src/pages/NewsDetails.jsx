@@ -15,7 +15,7 @@ const NewsDetails = () => {
     setNews(newsDetails);
   }
 
-  console.log(news);
+  // console.log(news);
   return (
     <div>
       <header className="py-3">

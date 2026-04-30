@@ -6,7 +6,7 @@ import Loading from "../pages/Loading";
 const PrivateRoute = ({ children }) => {
   const { user, loading } = use(AuthContext);
   const location = useLocation();
-  console.log(location);
+  // console.log(location);
   //   if-> user থাকে return to children div
   if (loading) {
     return <Loading></Loading>;

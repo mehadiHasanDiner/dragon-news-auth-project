@@ -29,7 +29,7 @@ const Login = () => {
         const errorCode = error.code;
         setError(errorCode);
       });
-    console.log(email, password);
+    // console.log(email, password);
   };
   return (
     <div className=" flex justify-center items-center min-h-screen">
